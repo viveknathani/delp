@@ -1,0 +1,102 @@
+.home {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    text-align: center;
+}
+
+.home p {
+    margin: 0;
+}
+
+.home #github { 
+    margin-left: auto;
+}
+
+.home #content {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: auto;
+    margin-left: auto;
+    margin-right: -10%;
+}
+
+.home #content #contain {
+    display: flex;
+    justify-content: center;   
+    align-items: center;
+    flex-direction: column;
+}
+
+.home #content #logo {
+    color: #D500F9;
+    font-size: 6rem;
+    font-weight: 800;
+    margin-top: 3%;
+}
+
+.home #content #tagline {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+.home #content .description {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.home #content .description span {
+    color: #D500F9;
+}
+
+.home #content #start {
+    margin-top: 5%;
+    background-color: #D500F9;
+    border-color: transparent;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1%;
+}
+
+.home #content #start:hover {
+    cursor: pointer;
+}
+
+.home #content #perks {
+    background-color: #272727;
+    border-radius: 10px;
+    margin-top: 2%;
+    font-weight: 700;
+    text-align: left;
+    padding: 2%;
+}
+
+.home #github {
+    background-color: #1DE9B6;
+    height: max-content;
+    padding: 10px;
+    margin-right: 1%;
+    margin-top: 1%;
+    font-weight: 800;
+    border-radius: 10px;
+}
+
+.home #github a {
+    text-decoration: none;
+}
+
+.home #github a:visited {
+    color: black;
+}
+
+.home #github a:hover {
+    color: black;
+}
+
+.home #github a:active {
+    color: black;
+}
