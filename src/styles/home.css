@@ -89,6 +89,10 @@
     text-decoration: none;
 }
 
+.home #github a:link {
+    color: black;
+}
+
 .home #github a:visited {
     color: black;
 }
