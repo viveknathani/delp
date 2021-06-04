@@ -100,3 +100,45 @@
 .home #github a:active {
     color: black;
 }
+
+@media screen and (max-width: 480px) {
+    .home #content {
+        margin-left: 10%;
+        margin-top: 10%;
+    }
+
+    .home #content #perks {
+        margin-top: 4%;
+        padding: 4%;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .home #content {
+        margin-left: 5%;
+        margin-top: 10%;
+    }
+
+    .home #content #perks {
+        margin-top: 4%;
+        padding: 3%;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .home #content #logo {
+        font-size: 10rem;
+    }
+
+    .home #content #tagline {
+        font-size: 5rem;
+    }
+
+    .home #content #description, .home #content #start {
+        font-size: 2.5rem;
+    }
+
+    .home #content #perks, .home #github {
+        font-size: 1.8rem;
+    }
+}
