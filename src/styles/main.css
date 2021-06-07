@@ -1,0 +1,48 @@
+.main {
+    display: flex;
+}
+
+.main #panel {
+    background-color: #272727;
+    height: 100vh;
+    width: 25%;
+}
+
+.main #panel #logo {
+    color: #D500F9;
+    font-size: 3rem;
+    font-weight: 800;
+    margin-top: -2%;
+    margin-bottom: 5%;
+    margin-left: 2%;
+}
+
+.main #panel button {
+    display: block;
+    width: 100%;
+    border: none;
+    font-size: 1rem;
+    text-align: left;
+    padding: 5px;
+    font-weight: 700;
+    margin-bottom: 3%;
+}
+
+.main #panel button:hover {
+    cursor: pointer;
+}
+
+.main #panel .unselected {
+    background-color: transparent;
+    color: white;
+}
+
+.main #panel .unselected {
+    background-color: transparent;
+    color: white;
+}
+
+.main #panel .selected {
+    background-color: #1DE9B6;
+    color: black;
+}
