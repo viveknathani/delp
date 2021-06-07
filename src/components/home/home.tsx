@@ -1,7 +1,19 @@
 import * as React from 'react';
 import '../../styles/home.css';
 
-function Home() : JSX.Element {
+// Defining props used by Home component
+interface Props {
+    goAway: () => void
+}
+
+/**
+ * The component which displays the tagline, perks and provides a button
+ * to switch to the main page.
+ * @param props Type defined above, a function is passed from the parent
+ *              component which changes the state of the parent and opens up
+ *              the feature page.
+ */
+function Home(props: Props): JSX.Element {
     return(
         <div className="home">
 
@@ -21,7 +33,7 @@ function Home() : JSX.Element {
                     what not!
                 </p>
                 <div id="contain">
-                    <button id="start">get started! &#128640;</button>
+                    <button id="start" onClick={() => props.goAway()}>get started! &#128640;</button>
                     <div id="perks">
                         <p>free &#9989;</p>
                         <p>open source &#9989;</p>

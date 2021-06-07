@@ -1,11 +1,16 @@
 import * as React from 'react';
 import Home from '../home/home';
+import Main from '../main/main';
 
-function App() : JSX.Element {
+/**
+ * Display one of the two components by maintaining a
+ * state variable and letting the Home component change it.
+ * @returns The correct component as per user's wish
+ */
+function App(): JSX.Element {
+  const [stayHome, goAway] = React.useState(true);
   return (
-    <div className="App">
-      <Home/>
-    </div>
+    stayHome ? <Home goAway={() => goAway(false)}/> : <Main/>
   );
 }
 
