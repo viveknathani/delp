@@ -1,3 +1,9 @@
+/**
+ * Find total number of words in the given string.
+ * @param input     String to count for
+ * @param separator About which characters are distinguished as words, default is whitespace
+ * @returns         The total number of words
+ */
 const totalWords = (input: String, separator: String = ' '): number => {
 
     let result: number = 0;
