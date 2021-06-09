@@ -62,3 +62,28 @@ describe('getWordDistribution()', () => {
 });
 
 // End: strstats.getWordDistribution
+
+// Begin: strstats.getMinMaxWords
+
+describe('getMinMaxWords()', () => {
+
+    it('Should work on a simple text.', () => {
+        const text: string = 'This is normal text.';
+        const arr: Array<String> = ['is', 'normal'];
+
+        expect(strstats.getMinMaxWords(text)).toEqual(arr);
+    });
+});
+
+// End: strstats.getMinMaxWords
+
+// Begin: strstats.getAllEmojis
+
+describe('getAllEmojis()', () => {
+
+    it('Should work on simple emoji filled text.', () => {
+        expect(strstats.getAllEmojis('👍👀 🚀 💯')).toEqual(['👍', '👀', '🚀', '💯']);
+    });
+});
+
+// End: strstats.getAllEmojis
