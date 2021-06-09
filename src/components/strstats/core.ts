@@ -73,7 +73,62 @@ const getWordDistribution = (input: String, separator: String = ' '): Map<String
 }
 
 
+/**
+ * Get the shortest and longest words in a string.
+ * @param input     The given string
+ * @param separator About which characters are distinguished as words, default is whitespace
+ * @returns         An array of strings of size 2, [shortestWord, longestWord]
+ */
+const getMinMaxWords = (input: String, separator: String = ' '): Array<String> => {
+
+    let arr: Array<String> = new Array<String>(2);
+    let shortest: String = new String(' ');
+    let longest: String = new String('');
+    let start: number = 0;
+    let end: number = 0;
+    let word: string = '';
+    let shortestUnassigned: boolean = true;
+
+    for (let i = 0; i <= input.length; ++i) {
+
+        if (i == input.length || (i !== 0 && input[i] === separator)) {
+            end = i;
+            const len: number = end - start;
+
+            if (shortestUnassigned || len < shortest.length) {
+                shortestUnassigned = false;
+                shortest = word;
+            }
+            if (len > longest.length) {
+                longest = word;
+            }
+            word = '';
+            start = end + 1;
+            continue;
+        }
+
+        word += input[i];
+    }
+
+    arr[0] = shortest; 
+    arr[1] = longest;
+    return arr;
+}
+
+/**
+ * Get list of all emojis (with repetition).
+ * @param input The given string
+ * @returns     The emoji list
+ */
+const getAllEmojis = (input: String): Array<String> => {
+
+    const regexEmojis = /\p{Emoji_Presentation}/gu;
+    return input.match(regexEmojis) as Array<String>;
+}
+
 export {
     totalWords,
-    getWordDistribution
+    getWordDistribution,
+    getMinMaxWords,
+    getAllEmojis
 }
