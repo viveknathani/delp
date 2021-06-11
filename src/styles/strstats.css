@@ -1,0 +1,60 @@
+.strstats {
+    padding: 1px;
+}
+
+.strstats label, .strstats #head{
+    margin-left: 3%;
+    font-weight: 700;
+}
+
+.strstats #box {
+    width: 95%;
+    height: 55vh;
+    margin-left: 2%;
+    margin-top: 1%;
+    background-color: #3a3a3a;
+    border-radius: 10px;
+    border-color: transparent;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.strstats #stats {
+    color: black;
+    background-color: #78f574;
+    margin-left: 2%;
+    margin-right: 2%;
+    border-radius: 10px;
+    font-weight: 700;
+    display: flex;
+    flex-wrap: wrap;
+    height: 20vh;
+    margin-top: 2%;
+    overflow: scroll;
+    scrollbar-width: thin !important;
+    scrollbar-track-color: none;
+}
+
+.strstats #stats #basic{
+    line-height: 0.1em;
+    width: 50%;
+    max-width: 50%;
+    overflow: hidden;
+}
+
+.strstats #stats #dist {
+    line-height: 0.1em;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #272727;
+}
+
