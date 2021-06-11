@@ -28,6 +28,7 @@ module.exports = {
     },
     "rules": {
         "block-scoped-var": "error",
-        "no-duplicate-imports": "error"
+        "no-duplicate-imports": "error",
+        "@typescript-eslint/no-inferrable-types": "off"
     }
 };
