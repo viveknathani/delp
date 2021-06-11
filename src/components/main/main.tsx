@@ -1,4 +1,5 @@
 import * as React from 'react';
+import StringStats from '../strstats/index';
 import '../../styles/main.css';
 
 /**
@@ -22,7 +23,8 @@ function Main(): JSX.Element {
 
     // Store of all feature components.
     const feature : Array<JSX.Element> = [
-                    <p key='0'>Nothing</p>
+                    <p key='0'></p>,
+                    <StringStats key='1'/>
                 ];
 
     return(
@@ -30,6 +32,12 @@ function Main(): JSX.Element {
             <div id="panel">
 
                 <p id="logo">delp</p>
+                <button 
+                    className={getClassName(1, selectedIndex)} 
+                    onClick={() => setSelectedIndex(1)}>
+                    string statistics
+                </button>
+
             </div>
 
             {/* Selective display of feature */}
