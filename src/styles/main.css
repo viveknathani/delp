@@ -46,3 +46,12 @@
     background-color: #1DE9B6;
     color: black;
 }
+
+.main #feature {
+    background-color: #272727;
+    margin-left: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    width: 70%;
+}
