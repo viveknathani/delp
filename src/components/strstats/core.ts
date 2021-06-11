@@ -1,13 +1,13 @@
 /**
  * Find total number of words in the given string.
- * @param input     String to count for
+ * @param input     string to count for
  * @param separator About which characters are distinguished as words, default is whitespace
  * @returns         The total number of words
  */
-const totalWords = (input: String, separator: String = ' '): number => {
+const totalWords = (input: string, separator: string = ' '): number => {
 
-    let result: number = 0;
-    let track: boolean = true;
+    let result = 0;
+    let track = true;
     
     for (let i = 0; i < input.length; ++i) {
         
@@ -32,13 +32,13 @@ const totalWords = (input: String, separator: String = ' '): number => {
  * @param word  The word to insert
  * @returns     Nothing
  */
-const insertIntoMap = (table: Map<String, number>, word: String): void => {
+const insertIntoMap = (table: Map<string, number>, word: string): void => {
     if (word === ' ' || word === undefined) {
         return;
     }
 
     if (table.has(word)) {
-        let currentValue: number = table.get(word) || 0;
+        const currentValue: number = table.get(word) || 0;
         table.set(word, currentValue + 1);
     }
     else {
@@ -52,9 +52,9 @@ const insertIntoMap = (table: Map<String, number>, word: String): void => {
  * @param separator About which characters are distinguished as words, default is whitespace
  * @returns          The frequency map
  */
-const getWordDistribution = (input: String, separator: String = ' '): Map<String, number> => {
+const getWordDistribution = (input: string, separator: string = ' '): Map<string, number> => {
     
-    const table: Map<String, number> = new Map();
+    const table: Map<string, number> = new Map();
     let word: string = '';
 
     for (let i = 0; i < input.length; ++i) {
@@ -79,11 +79,11 @@ const getWordDistribution = (input: String, separator: String = ' '): Map<String
  * @param separator About which characters are distinguished as words, default is whitespace
  * @returns         An array of strings of size 2, [shortestWord, longestWord]
  */
-const getMinMaxWords = (input: String, separator: String = ' '): Array<String> => {
+const getMinMaxWords = (input: string, separator: string = ' '): Array<string> => {
 
-    let arr: Array<String> = new Array<String>(2);
-    let shortest: String = new String(' ');
-    let longest: String = new String('');
+    const arr: Array<string> = new Array<string>(2);
+    let shortest: string = '';
+    let longest: string = '';
     let start: number = 0;
     let end: number = 0;
     let word: string = '';
@@ -120,10 +120,14 @@ const getMinMaxWords = (input: String, separator: String = ' '): Array<String> =
  * @param input The given string
  * @returns     The emoji list
  */
-const getAllEmojis = (input: String): Array<String> => {
+const getAllEmojis = (input: string): Array<string> => {
 
     const regexEmojis = /\p{Emoji_Presentation}/gu;
-    return input.match(regexEmojis) as Array<String>;
+    const arr: RegExpMatchArray | null = input.match(regexEmojis);
+    if (arr === null) {
+        return Array<string>(0);
+    }
+    return arr as Array<string>;
 }
 
 export {

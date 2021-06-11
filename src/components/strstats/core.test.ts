@@ -32,7 +32,7 @@ describe('getWordDistribution()', () => {
     });
 
     it('Should work on a normal text.', () => {
-        const text: String = new String('This is normal text.');    
+        const text: string = 'This is normal text.'  
 
         table.set('This', 1);
         table.set('is', 1);
@@ -44,13 +44,13 @@ describe('getWordDistribution()', () => {
     
     it('Should work on empty text.', () => {
     
-        const text: String = new String(' ');
+        const text: string = ' ';
         expect(strstats.getWordDistribution(text)).toEqual(table);
     });
     
     it('Should work with emojis.', () => {
     
-        const text: String = new String('👍 👀 👀 🚀 💯');
+        const text: string = '👍 👀 👀 🚀 💯';
     
         table.set('👍', 1);
         table.set('👀', 2);
