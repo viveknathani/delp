@@ -26,7 +26,7 @@ describe('totalWords()', () => {
 
 describe('getWordDistribution()', () => {
 
-    let table: Map<String, number>;
+    let table: Map<string, number>;
     beforeEach(() => {
         table = new Map();
     });
@@ -69,7 +69,7 @@ describe('getMinMaxWords()', () => {
 
     it('Should work on a simple text.', () => {
         const text: string = 'This is normal text.';
-        const arr: Array<String> = ['is', 'normal'];
+        const arr: Array<string> = ['is', 'normal'];
 
         expect(strstats.getMinMaxWords(text)).toEqual(arr);
     });
