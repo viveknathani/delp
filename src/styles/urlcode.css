@@ -1,0 +1,29 @@
+.urlcode #input, .urlcode #en, .urlcode #de {
+    width: 95%;
+    height: 5vh;
+    margin-left: 2%;
+    margin-top: 1%;
+    background-color: #3a3a3a;
+    border-radius: 10px;
+    border-color: transparent;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.urlcode {
+    margin-top: 10%;
+}
+
+.urlcode .desc {
+    text-align: center;
+    font-weight: 800;
+    color: rgb(191, 209, 32);
+}
+
+.urlcode label {
+    text-align: center;
+    font-weight: 800;
+    margin-left: 2%;
+    color: rgb(157, 99, 214);
+}

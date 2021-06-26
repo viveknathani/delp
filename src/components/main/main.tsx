@@ -1,5 +1,6 @@
 import * as React from 'react';
 import StringStats from '../strstats/index';
+import URLCode from '../urlcode/index';
 import '../../styles/main.css';
 
 /**
@@ -24,7 +25,8 @@ function Main(): JSX.Element {
     // Store of all feature components.
     const feature : Array<JSX.Element> = [
                     <p key='0'></p>,
-                    <StringStats key='1'/>
+                    <StringStats key='1'/>,
+                    <URLCode key='2'/>
                 ];
 
     return(
@@ -36,6 +38,10 @@ function Main(): JSX.Element {
                     className={getClassName(1, selectedIndex)} 
                     onClick={() => setSelectedIndex(1)}>
                     string statistics
+                </button>
+                <button className={getClassName(2, selectedIndex)}
+                        onClick={() => setSelectedIndex(2)}>
+                    URL encode/decode        
                 </button>
 
             </div>
