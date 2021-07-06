@@ -1,6 +1,7 @@
 import * as React from 'react';
 import StringStats from '../strstats/index';
 import URLCode from '../urlcode/index';
+import HashGenerator from '../hashgen';
 import '../../styles/main.css';
 
 /**
@@ -26,7 +27,8 @@ function Main(): JSX.Element {
     const feature : Array<JSX.Element> = [
                     <p key='0'></p>,
                     <StringStats key='1'/>,
-                    <URLCode key='2'/>
+                    <URLCode key='2'/>,
+                    <HashGenerator key='3'/>
                 ];
 
     return(
@@ -42,6 +44,10 @@ function Main(): JSX.Element {
                 <button className={getClassName(2, selectedIndex)}
                         onClick={() => setSelectedIndex(2)}>
                     URL encode/decode        
+                </button>
+                <button className={getClassName(3, selectedIndex)}
+                        onClick={() => setSelectedIndex(3)}>
+                    hash generator
                 </button>
 
             </div>
