@@ -1,0 +1,29 @@
+.basen input, .basen #res {
+    width: 95%;
+    height: 5vh;
+    margin-left: 2%;
+    margin-top: 1%;
+    background-color: #3a3a3a;
+    border-radius: 10px;
+    border-color: transparent;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.basen button {
+    cursor: pointer;
+    height: 5vh;
+    margin-left: 2%;
+    margin-top: 1%;
+    border-radius: 10px;
+    background-color: #D500F9;
+    border-color: transparent;
+    font-size: medium;
+    width: 95%;
+    font-weight: bolder;
+}
+
+.basen #res {
+    font-weight: bolder;
+}
