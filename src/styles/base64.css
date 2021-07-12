@@ -1,0 +1,23 @@
+#base64-code {
+    margin-top: 1%;
+}
+
+#base64-code #tagline {
+    color: #1DE9B6;
+    font-weight: 900;
+    font-size: 1.2rem;
+    margin-left: 2%;
+}
+
+#base64-code input, #base64-code #result {
+    width: 95%;
+    height: 5vh;
+    margin-left: 2%;
+    margin-top: 1%;
+    background-color: #3a3a3a;
+    border-radius: 10px;
+    border-color: transparent;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
