@@ -3,6 +3,7 @@ import StringStats from '../strstats/index';
 import URLCode from '../urlcode/index';
 import HashGenerator from '../hashgen';
 import AnyBase from '../basen';
+import Base64 from '../base64';
 import '../../styles/main.css';
 
 /**
@@ -30,7 +31,8 @@ function Main(): JSX.Element {
                     <StringStats key='1'/>,
                     <URLCode key='2'/>,
                     <HashGenerator key='3'/>,
-                    <AnyBase key='4'/>
+                    <AnyBase key='4'/>,
+                    <Base64 key='5'/>
                 ];
 
     return(
@@ -54,7 +56,11 @@ function Main(): JSX.Element {
                 <button className={getClassName(4, selectedIndex)}
                         onClick={() => setSelectedIndex(4)}>
                     number to any base
-                </button>    
+                </button>
+                <button className={getClassName(5, selectedIndex)}
+                        onClick={() => setSelectedIndex(5)}>
+                    base64 encode/decode
+                </button>
             </div>
 
             {/* Selective display of feature */}
