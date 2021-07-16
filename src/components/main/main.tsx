@@ -6,6 +6,7 @@ import AnyBase from '../basen';
 import Base64 from '../base64';
 import CSVJSON from '../csvjson';
 import JSONCSV from '../jsoncsv';
+import TextDiff from '../textdiff';
 import '../../styles/main.css';
 
 /**
@@ -36,7 +37,8 @@ function Main(): JSX.Element {
                     <AnyBase key='4'/>,
                     <Base64 key='5'/>,
                     <CSVJSON key='6'/>,
-                    <JSONCSV key='7'/>
+                    <JSONCSV key='7'/>,
+                    <TextDiff key='8'/>
                 ];
 
     return(
@@ -72,6 +74,10 @@ function Main(): JSX.Element {
                 <button className={getClassName(7, selectedIndex)}
                         onClick={() => setSelectedIndex(7)}>
                     JSON to CSV
+                </button>
+                <button className={getClassName(8, selectedIndex)}
+                        onClick={() => setSelectedIndex(8)}>
+                    text diff
                 </button>
             </div>
 
