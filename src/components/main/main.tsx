@@ -4,6 +4,7 @@ import URLCode from '../urlcode/index';
 import HashGenerator from '../hashgen';
 import AnyBase from '../basen';
 import Base64 from '../base64';
+import CSVJSON from '../csvjson';
 import '../../styles/main.css';
 
 /**
@@ -32,7 +33,8 @@ function Main(): JSX.Element {
                     <URLCode key='2'/>,
                     <HashGenerator key='3'/>,
                     <AnyBase key='4'/>,
-                    <Base64 key='5'/>
+                    <Base64 key='5'/>,
+                    <CSVJSON key='6'/>
                 ];
 
     return(
@@ -60,6 +62,10 @@ function Main(): JSX.Element {
                 <button className={getClassName(5, selectedIndex)}
                         onClick={() => setSelectedIndex(5)}>
                     base64 encode/decode
+                </button>
+                <button className={getClassName(6, selectedIndex)}
+                        onClick={() => setSelectedIndex(6)}>
+                    CSV to JSON
                 </button>
             </div>
 

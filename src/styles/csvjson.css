@@ -1,0 +1,18 @@
+#csvjson #tagline {
+    color: #1DE9B6;
+    font-weight: 900;
+    font-size: 1.2rem;
+    margin-left: 2%;
+}
+
+#csvjson textarea {
+    width: 40%;
+    height: 55vh;
+    margin-left: 2%;
+    margin-top: 1%;
+    background-color: #3a3a3a;
+    border-radius: 10px;
+    border-color: transparent;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
