@@ -32,7 +32,7 @@ function JSONCSV(): JSX.Element {
  
      return(
          <div id="csvjson">
-             <p id="tagline">convert CSV to JSON</p>
+             <p id="tagline">convert JSON to CSV</p>
              <textarea placeholder="your json array" id="box" onChange={(e) => setInput(e.target.value)}></textarea>
              <textarea placeholder="your csv" id="result" value={result}></textarea>
          </div>
