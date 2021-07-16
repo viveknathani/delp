@@ -1,8 +1,9 @@
 # delp
 
+<img src="./logo.PNG">
+
 delp is a web app that lets developers have common tools in one place. 
-It is under active development right now. The project board can be found [here](https://www.notion.so/5686a2ffd94e4decb82a011c25aa2300?v=381a79bb2a674d7693fdd76eeaf4a937). 
- 
+
 ## tech 
 
 - Node.js 
