@@ -22,12 +22,11 @@
     "typescript": "^4.3.2"
   },
   "scripts": {
-    "start": "node server.js",
-    "dev": "react-scripts start",
-    "build": "npx tsc server.ts && react-scripts build",
+    "start": "react-scripts start",
+    "build": "npm run lint && npm run pretty && react-scripts build",
     "lint": "eslint . --ext .ts",
     "pretty": "npx prettier --write src",
-    "test": "react-scripts test",
+    "test": "react-scripts test --watchAll=false",
     "eject": "react-scripts eject"
   },
   "browserslist": {
