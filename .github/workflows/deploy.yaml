@@ -9,8 +9,8 @@ jobs:
     runs-on: ubuntu-18.04
     steps:    
       - name: Deploy to Netlify
-        uses: nwtgck/actions-netlify@v1.2
-        uses: Adzz/jest_test_action@v1.0.0
+        - uses: nwtgck/actions-netlify@v1.2
+        - uses: Adzz/jest_test_action@v1.0.0
         with:
           package-manager: npm
           command: build
