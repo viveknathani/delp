@@ -1,5 +1,7 @@
 # delp
 
+[![build](https://github.com/viveknathani/delp/actions/workflows/build.yaml/badge.svg)](https://github.com/viveknathani/delp/actions/workflows/build.yaml) [![test](https://github.com/viveknathani/delp/actions/workflows/test.yaml/badge.svg)](https://github.com/viveknathani/delp/actions/workflows/test.yaml)  
+
 <img src="./logo.PNG">
 
 delp is a web app that lets developers have common tools in one place. 
